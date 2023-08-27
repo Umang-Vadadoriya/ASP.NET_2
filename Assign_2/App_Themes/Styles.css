@@ -19,3 +19,7 @@
 #Q2 #ContentPlaceHolder1_Panel1 tr:hover{
     background-color : #ffffffbf;
 }
+
+#Q3 .w-custom{
+    width: 95% !important;
+}
