@@ -9,5 +9,27 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div id="Q3"></div>
+    <div id="Q3">
+        <div class="row align-items-center justify-content-center" style="height: 90vh;">
+            <div class="col-4">
+                <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                        <label for="inputPassword6" class="col-form-label">Account No.</label>
+                    </div>
+                    <div class="col-auto d-flex">
+                        <asp:TextBox ID="tbACNo" runat="server" CssClass="form-control" TextMode="Number"></asp:TextBox>
+                        <asp:RangeValidator ID="RangevalidateACNo" runat="server" ErrorMessage="Account Number Should Be Atleast 5 Digits." ControlToValidate="tbACNo" MinimumValue="10000" Type="Integer" CssClass="form-text" MaximumValue="99999" ForeColor="Red">*</asp:RangeValidator>
+                        <asp:RequiredFieldValidator ID="RequirevalidateACNo" runat="server" ControlToValidate="tbACNo" ErrorMessage="Account Number Is Required" CssClass="form-text" ForeColor="Red">*</asp:RequiredFieldValidator>
+                    </div>
+                    <div>
+                        <asp:ValidationSummary ID="validateSummary" runat="server" CssClass="form-text alert-danger text-danger" />
+                    </div>
+                    <div>
+                        <asp:Button ID="btnRegister" runat="server" Text="Register" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </asp:Content>
