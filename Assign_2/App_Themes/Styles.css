@@ -1,0 +1,21 @@
+﻿body {
+}
+
+/*#Q2 tr{
+    border: 1px black solid;
+}*/
+
+#Q2 .w-custom {
+    width: 65% !important;
+}
+
+#Q2 #ContentPlaceHolder1_Panel1 tr:nth-child(2n+1) {
+    background-color : darkgray;
+}
+#Q2 #ContentPlaceHolder1_Panel1 tr {
+    transition: ease-in-out 0.3s;
+}
+
+#Q2 #ContentPlaceHolder1_Panel1 tr:hover{
+    background-color : #ffffffbf;
+}

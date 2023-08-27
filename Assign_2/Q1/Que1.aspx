@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Question 1</title>
-    <link rel="icon" type="image/x-icon" href="../Assets/Images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../Assets/Images/favicon.ico"/>
     <link href="../App_Themes/bootstrap.min.css" rel="stylesheet" />
     <script src="../App_Themes/bootstrap.bundle.min.js"></script>
 </asp:Content>

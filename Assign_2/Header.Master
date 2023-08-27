@@ -35,11 +35,15 @@
                 </div>
             </nav>--%>
 
-            <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" BackColor="Black" CssClass="nav-link" ForeColor="White">
+            <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" BackColor="Black" ForeColor="White" Width="1600px">
                 <Items>
                     <asp:MenuItem NavigateUrl="~/Q1/Que1.aspx" Text="File Upload" Value="File Upload"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Q2/Que2.aspx" Text="State Management" Value="State Management"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Q3/Que3.aspx" Text="Register" Value="Register"></asp:MenuItem>
                 </Items>
+                <StaticHoverStyle BorderStyle="Inset" />
+                <StaticMenuItemStyle BorderColor="Blue" BorderStyle="Outset" BorderWidth="2px" HorizontalPadding="10px" ItemSpacing="10px" VerticalPadding="10px" />
+                <StaticMenuStyle HorizontalPadding="10px" VerticalPadding="10px" />
             </asp:Menu>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
