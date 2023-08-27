@@ -7,7 +7,6 @@
     <link href="../App_Themes/Styles.css" rel="stylesheet" />
     <script src="../App_Themes/bootstrap.bundle.min.js"></script>
 </asp:Content>
-
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="row align-items-center justify-content-center bg-dark-subtle" id="Q2" style="height:90vh";>
         <div class="col"></div>
