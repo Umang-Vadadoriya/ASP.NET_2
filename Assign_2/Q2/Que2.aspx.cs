@@ -107,6 +107,10 @@ namespace Assign_2.Q2
             tc0.Dispose();
             tc1.Dispose();
             tc2.Dispose();
+
+            tBCourse.Text = "";
+            tBName.Text = "";
+            tBCourse.Text = "";
         }
     }
 }
