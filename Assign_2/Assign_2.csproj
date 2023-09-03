@@ -115,6 +115,10 @@
     </None>
     <Content Include="Q4\Que41.aspx" />
     <Content Include="Q4\Que42.aspx" />
+    <Content Include="Q4\Que43.aspx" />
+    <Content Include="Q4\Que44.aspx" />
+    <Content Include="Q4\Que45.aspx" />
+    <Content Include="Q4\Que46.aspx" />
     <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
@@ -178,6 +182,34 @@
     </Compile>
     <Compile Include="Q4\Que42.aspx.designer.cs">
       <DependentUpon>Que42.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Q4\Que43.aspx.cs">
+      <DependentUpon>Que43.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Q4\Que43.aspx.designer.cs">
+      <DependentUpon>Que43.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Q4\Que44.aspx.cs">
+      <DependentUpon>Que44.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Q4\Que44.aspx.designer.cs">
+      <DependentUpon>Que44.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Q4\Que45.aspx.cs">
+      <DependentUpon>Que45.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Q4\Que45.aspx.designer.cs">
+      <DependentUpon>Que45.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Q4\Que46.aspx.cs">
+      <DependentUpon>Que46.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Q4\Que46.aspx.designer.cs">
+      <DependentUpon>Que46.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

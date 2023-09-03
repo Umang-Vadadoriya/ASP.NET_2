@@ -8,7 +8,7 @@
     <script src="../App_Themes/bootstrap.bundle.min.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="row align-items-center justify-content-center bg-dark-subtle" id="Q2" style="height:90vh";>
+    <div class="row align-items-center justify-content-center bg-dark-subtle" id="Q2" style="height:88vh";>
         <div class="col"></div>
         <div class="col-3 text-center">
             <div class="row align-items-center justify-content-center p-2 border border-1 border-black rounded-top-3 ">

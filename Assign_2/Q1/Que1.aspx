@@ -9,7 +9,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div id="Q1" class="container-fluid bg-dark-subtle">
-        <div class="row align-items-center justify-content-center" style="height: 90vh;">
+        <div class="row align-items-center justify-content-center" style="height: 88vh;">
             <div class="col"></div>
             <div class="col-4">
                 <div class="d-flex flex-column text-center align-items-center justify-content-center">

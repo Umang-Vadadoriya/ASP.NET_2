@@ -5,8 +5,16 @@
     <siteMapNode url="~/Q2/Que2.aspx" title="Q2"  description="" ></siteMapNode>
     <siteMapNode url="~/Q3/Que3.aspx" title="Q3"  description="" ></siteMapNode>
     <siteMapNode url="" title="Q4"  description="" >
-      <siteMapNode url="~/Q4/Que41.aspx" title="Q4-1"  description="" ></siteMapNode>
-      <siteMapNode url="~/Q4/Que42.aspx" title="Q4-2"  description="" ></siteMapNode>
+      <siteMapNode url="" title="Controls"  description="" >
+        <siteMapNode url="~/Q4/Que43.aspx" title="Accordian"  description="Accordian" ></siteMapNode>
+        <siteMapNode url="~/Q4/Que44.aspx" title="ComboBox"  description="ComboBox" ></siteMapNode>
+        <siteMapNode url="~/Q4/Que42.aspx" title="Star Rating"  description="Rating" ></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="Extenders"  description="" >
+        <siteMapNode url="~/Q4/Que41.aspx" title="Password Strength"  description="Password" ></siteMapNode>
+        <siteMapNode url="~/Q4/Que45.aspx" title="Confirm Button" description="Confirm Button" ></siteMapNode>
+        <siteMapNode url="~/Q4/Que46.aspx" title="Calender" description="Calender" ></siteMapNode>
+      </siteMapNode>
     </siteMapNode>
   </siteMapNode>
 </siteMap>
