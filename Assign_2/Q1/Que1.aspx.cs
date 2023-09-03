@@ -16,7 +16,7 @@ namespace Assign_2.Q1
 
         protected void btnUpload_Click(object sender, EventArgs e)
         {
-            if (fileUp.HasFiles)
+            if (fileUp.HasFiles && Page.IsValid)
             {
 
                 string doc = "application/msword";
@@ -38,7 +38,7 @@ namespace Assign_2.Q1
                             System.Diagnostics.Debug.WriteLine(Server.MapPath(@"~\upload") + @"\" + new_name);
                             one_file.SaveAs(Server.MapPath(@"~\upload") + @"\" + new_name);
                             lblOutput.Text += "Uploaded : " + one_file.FileName + "<br>";
-                            lblOutput.ForeColor = System.Drawing.Color.Green;
+                            lblOutput.ForeColor = System.Drawing.Color.Green;                            
                         }
                         catch (Exception ex)
                         {
@@ -52,12 +52,15 @@ namespace Assign_2.Q1
                         lblOutput.ForeColor = System.Drawing.Color.Red;
                     }
                 }
+
+                fileUp.Dispose();
             }
             else
             {
                 lblOutput.Text += "Select File For Upload...!!! <br/>";
                 lblOutput.ForeColor = System.Drawing.Color.Red;
             }
+            //Response.Redirect(Request.Url.AbsoluteUri);
         }
     }
 }
