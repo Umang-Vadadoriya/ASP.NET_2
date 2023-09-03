@@ -4,10 +4,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Question 4 (Combo Box)</title>
-    <link rel="icon" type="image/x-icon" href="../Assets/Images/favicon.ico" />
-    <link href="../App_Themes/bootstrap.min.css" rel="stylesheet" />
-    <link href="../App_Themes/Styles.css" rel="stylesheet" />
-    <script src="../App_Themes/bootstrap.bundle.min.js"></script>
     <style>
         .cb-default #ContentPlaceHolder1_ComboBox1_ComboBox1_Button {
             vertical-align: middle;
