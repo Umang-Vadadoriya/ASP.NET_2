@@ -18,8 +18,10 @@ Adding Gallery
   ![image](https://github.com/Umang-Vadadoriya/ASP.NET_2/assets/91721918/99d1208c-7484-4c7e-ad6a-43e8ebb77d64)
 
 # Q3
-- Validation Controls [Requird, Compare, Range, Validation]
+- Validation Controls [Requird, Compare, Summary]
   ![image](https://github.com/Umang-Vadadoriya/ASP.NET_2/assets/91721918/c2e6014a-9fcf-4562-bd55-eb650af48cbd)
+- Validation Controls [Range]
+  ![image](https://github.com/Umang-Vadadoriya/ASP.NET_2/assets/91721918/3936fd83-cd5a-469e-b897-0e19019a52f0)
 - Validation Controls [Custom]
   ![image](https://github.com/Umang-Vadadoriya/ASP.NET_2/assets/91721918/6e8b0a54-2930-4512-92ab-9dd13b359cae)
 
