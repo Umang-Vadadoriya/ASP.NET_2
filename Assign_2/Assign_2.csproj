@@ -114,6 +114,7 @@
     <Content Include="Q1\Que1.aspx" />
     <Content Include="Q2\Que2.aspx" />
     <Content Include="Q3\Que3.aspx" />
+    <Content Include="Q4\Que4.aspx" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Web.config" />
@@ -147,6 +148,13 @@
     </Compile>
     <Compile Include="Q3\Que3.aspx.designer.cs">
       <DependentUpon>Que3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Q4\Que4.aspx.cs">
+      <DependentUpon>Que4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Q4\Que4.aspx.designer.cs">
+      <DependentUpon>Que4.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -16,36 +16,47 @@ namespace Assign_2.Q1
 
         protected void btnUpload_Click(object sender, EventArgs e)
         {
-            string doc = "application/msword";
-            string docx = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
-
-            foreach (var one_file in fileUp.PostedFiles)
+            if (fileUp.HasFiles)
             {
 
-                Random rand = new Random();
-                if (one_file.ContentType == doc || one_file.ContentType == docx)
+                string doc = "application/msword";
+                string docx = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
+
+                foreach (HttpPostedFile one_file in fileUp.PostedFiles)
                 {
-                    int r = rand.Next(1000000, 9999999);
 
-                    string ext = System.IO.Path.GetExtension(one_file.FileName);
-                    string new_name = "userId" + "_" + r + ext;
-
-                    try
+                    Random rand = new Random();
+                    if (one_file.ContentType == doc || one_file.ContentType == docx)
                     {
-                        System.Diagnostics.Debug.WriteLine(Server.MapPath(@"~\upload") + @"\" + new_name);
-                        one_file.SaveAs(Server.MapPath(@"~\upload") + @"\" + new_name);
-                        lblOutput.Text += "Uploaded : " + one_file.FileName+"<br>";
+                        int rand_int = rand.Next(1000000, 9999999);
+
+                        string ext = System.IO.Path.GetExtension(one_file.FileName);
+                        string new_name = "userId" + "_" + rand_int + ext;
+
+                        try
+                        {
+                            System.Diagnostics.Debug.WriteLine(Server.MapPath(@"~\upload") + @"\" + new_name);
+                            one_file.SaveAs(Server.MapPath(@"~\upload") + @"\" + new_name);
+                            lblOutput.Text += "Uploaded : " + one_file.FileName + "<br>";
+                            lblOutput.ForeColor = System.Drawing.Color.Green;
+                        }
+                        catch (Exception ex)
+                        {
+                            System.Diagnostics.Debug.WriteLine("Error" + ex.Message);
+                            lblOutput.Text += "Error While Uploading : " + one_file.FileName + "<br>";
+                        }
                     }
-                    catch (Exception ex)
+                    else
                     {
-                        System.Diagnostics.Debug.WriteLine("Error" + ex.Message);
-                        lblOutput.Text += "Error While Uploading : " + one_file.FileName + "<br>";
+                        lblOutput.Text += "Invalid Type Of : " + one_file.FileName + "<br/>";
+                        lblOutput.ForeColor = System.Drawing.Color.Red;
                     }
                 }
-                else
-                {
-                    lblOutput.Text += "Invalid Type Of : " + one_file.FileName + "<br/>";                    
-                }
+            }
+            else
+            {
+                lblOutput.Text += "Select File For Upload...!!! <br/>";
+                lblOutput.ForeColor = System.Drawing.Color.Red;
             }
         }
     }
