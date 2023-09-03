@@ -9,8 +9,8 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div id="Q3">
-        <div class="row align-items-center justify-content-center" style="height: 90vh;">
+    <div id="Q3" class=" bg-dark-subtle" >
+        <div class="row align-items-center justify-content-center" >
             <div class="col"></div>
             <div class="col-4 p-4">
                 <div class="row g-2 align-items-center p-4 border border-1 border-black rounded-3">

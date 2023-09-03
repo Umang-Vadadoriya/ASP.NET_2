@@ -43,6 +43,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=19.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\OneDrive\Documents\ASP.NET AJAX Control Toolkit\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -95,6 +99,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Themes\Styles.css" />
+    <Content Include="Assets\Images\star-empty.svg" />
+    <Content Include="Assets\Images\star-fill.svg" />
+    <Content Include="Index.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -106,6 +113,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Q4\Que41.aspx" />
+    <Content Include="Q4\Que42.aspx" />
+    <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Themes\bootstrap.bundle.min.js" />
@@ -114,7 +124,6 @@
     <Content Include="Q1\Que1.aspx" />
     <Content Include="Q2\Que2.aspx" />
     <Content Include="Q3\Que3.aspx" />
-    <Content Include="Q4\Que4.aspx" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Web.config" />
@@ -126,6 +135,13 @@
     </Compile>
     <Compile Include="Header.Master.designer.cs">
       <DependentUpon>Header.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Q1\Que1.aspx.cs">
@@ -149,12 +165,19 @@
     <Compile Include="Q3\Que3.aspx.designer.cs">
       <DependentUpon>Que3.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Q4\Que4.aspx.cs">
-      <DependentUpon>Que4.aspx</DependentUpon>
+    <Compile Include="Q4\Que41.aspx.cs">
+      <DependentUpon>Que41.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Q4\Que4.aspx.designer.cs">
-      <DependentUpon>Que4.aspx</DependentUpon>
+    <Compile Include="Q4\Que41.aspx.designer.cs">
+      <DependentUpon>Que41.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Q4\Que42.aspx.cs">
+      <DependentUpon>Que42.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Q4\Que42.aspx.designer.cs">
+      <DependentUpon>Que42.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

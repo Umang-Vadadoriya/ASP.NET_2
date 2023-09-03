@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Assign_2.Q4
 {
-    public partial class Que4 : System.Web.UI.Page
+    public partial class Q41 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

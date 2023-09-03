@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="index.aspx" title="Home"  description="">
+    <siteMapNode url="~/Q1/Que1.aspx" title="Q1"  description="" ></siteMapNode>
+    <siteMapNode url="~/Q2/Que2.aspx" title="Q2"  description="" ></siteMapNode>
+    <siteMapNode url="~/Q3/Que3.aspx" title="Q3"  description="" ></siteMapNode>
+    <siteMapNode url="" title="Q4"  description="" >
+      <siteMapNode url="~/Q4/Que41.aspx" title="Q4-1"  description="" ></siteMapNode>
+      <siteMapNode url="~/Q4/Que42.aspx" title="Q4-2"  description="" ></siteMapNode>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

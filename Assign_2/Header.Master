@@ -8,8 +8,8 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
+    <form id="form1" runat="server" class="container-fluid>
+        <div ">
             <%--            <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">Navbar</a>
@@ -35,16 +35,16 @@
                 </div>
             </nav>--%>
 
-            <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" BackColor="Black" ForeColor="White" Width="1600px">
-                <Items>
-                    <asp:MenuItem NavigateUrl="~/Q1/Que1.aspx" Text="File Upload" Value="File Upload"></asp:MenuItem>
-                    <asp:MenuItem NavigateUrl="~/Q2/Que2.aspx" Text="State Management" Value="State Management"></asp:MenuItem>
-                    <asp:MenuItem NavigateUrl="~/Q3/Que3.aspx" Text="Register" Value="Register"></asp:MenuItem>
-                </Items>
-                <StaticHoverStyle BorderStyle="Inset" />
-                <StaticMenuItemStyle BorderColor="Blue" BorderStyle="Outset" BorderWidth="2px" HorizontalPadding="10px" ItemSpacing="10px" VerticalPadding="10px" />
-                <StaticMenuStyle HorizontalPadding="10px" VerticalPadding="10px" />
+            <asp:Menu ID="Menu1" runat="server" BackColor="gray" Width="" DataSourceID="SiteMapDataSource1" CssClass="p-3 w-100" DynamicHorizontalOffset="10" ItemWrap="True">
+                <DynamicMenuItemStyle CssClass="text-white dropdown-item ps-2" />
+                <DynamicMenuStyle CssClass="bg-dark bg-gradient p-2 rounded" />
+                <DynamicSelectedStyle CssClass="menu-hover" />
+                <StaticMenuItemStyle CssClass="text-white fs-5" />
             </asp:Menu>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+            <div class="bg-dark-subtle">
+            <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath>
+            </div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>

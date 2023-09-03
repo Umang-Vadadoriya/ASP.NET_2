@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Assign_2.Q4
+namespace Assign_2
 {
 
 
-    public partial class Que4
+    public partial class Index
     {
     }
 }
